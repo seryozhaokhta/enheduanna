@@ -2,10 +2,6 @@
 
 ![intro](intro.gif)
 
-## Overview
-
-Welcome to the Enheduanna Project, an interactive and comprehensive resource dedicated to the life and works of Enheduanna, one of the earliest known poets in human history. This project aims to provide an immersive experience through interactive maps, timelines, translations, historical contexts, and a rich gallery.
-
 ## Features
 
 ### Interactive Map
