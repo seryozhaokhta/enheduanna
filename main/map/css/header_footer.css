@@ -1,0 +1,49 @@
+header,
+footer {
+  color: white;
+}
+
+header {
+  margin-top: 12px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  z-index: 20;
+}
+
+.headerHome {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.headerHome svg {
+  margin-left: 15px;
+  width: 27px;
+}
+
+.headerCube {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerSetting {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 1.25em 0;
+
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}

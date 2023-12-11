@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enheduanna</title>
+        <link rel="stylesheet" href="prelodLite.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="videoPreloader" class="video-preloader">
+            <video
+                id="preloaderVideo"
+                autoplay
+                muted
+                loop
+            >
+                <source src="assets/prelod.mp4" type="video/mp4">none
+            </video>
+        </div>
+        <header>
+            <div class="header-section">
+                <h1 class="h1">enheduanna</h1>
+            </div>
+        </header>
+        <main>
+            <!-- HYMNS -->
+            <div class="cell hymns-cell">
+                <h2 class="hymns-title" id="hymns-trigger">HYMNS</h2>
+                <div id="subtitles-area">
+                    <div class="subtitles">
+                        <div class="subtitle" id="subtitle1">
+                            <a href="hymns/1-exaltation/index.html">The Exaltation of Inana</a>
+                        </div>
+                        <div class="subtitle" id="subtitle2">The Hymn to Inana</div>
+                        <div class="subtitle" id="subtitle3">The Temple Hymns</div>
+                        <div class="subtitle" id="subtitle4">Fragmentary Hymns</div>
+                    </div>
+                </div>
+            </div>
+            <!-- HISTORY -->
+            <div class="cell history-cell">
+                <h2 class="section-title">
+                    <a href="history/index.html">HISTORY</a>
+                </h2>
+            </div>
+            <!-- SOURCES -->
+            <div class="cell sources-cell">
+                <h2 class="section-title">SOURCES</h2>
+            </div>
+            <div class="cell">Ячейка 4</div>
+            <div class="cell">Ячейка 5</div>
+            <!-- GALLERY -->
+            <div class="cell gallery-cell">
+                <h2 class="section-title">
+                    <a href="gallery/index.html">GALLERY</a>
+                </h2>
+            </div>
+            <div class="cell">Ячейка 7</div>
+            <!-- TIMELINE -->
+            <div class="cell">
+                <h2 class="section-title">
+                    <a href="timeline/index.html">TIMELINE</a>
+                </h2>
+            </div>
+            <div class="cell">Ячейка 9</div>
+            <!-- MAP -->
+            <div class="cell map-cell">
+                <h2 class="section-title">
+                    <a href="map/index.html">MAP</a>
+                </h2>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-ennoru">
+                <div id="language-buttons">
+                    <div class="btn-container" id="btn-en-container">
+                        <button id="btn-en">EN</button>
+                        <div class="underline" id="underline-en"></div>
+                    </div>
+                    <div class="outer-container" id="outer-container-no">
+                        <div class="btn-container" id="btn-no-container">
+                            <button id="btn-no">NO</button>
+                            <div class="underline" id="underline-no"></div>
+                            <div class="additional-text" id="additional-text-no">
+                                <div class="button-container">
+                                    <div class="button-no horizontal">bokmål</div>
+                                    <div class="button-no horizontal">nynorsk</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-container" id="btn-ru-container">
+                        <button id="btn-ru">RU</button>
+                        <div class="underline" id="underline-ru"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section"></div>
+            <div class="footer-eclipse">
+                <div class="eclipse">
+                    <div class="sun"></div>
+                    <div class="moon"></div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+        <script src="button.js"></script>
+        <script src="prelodLite.js"></script>
+    </body>
+</html>

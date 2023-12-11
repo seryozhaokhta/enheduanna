@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Toggle Example</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/main/map/icons/homeIcon/homeIcon.css">
+        <link rel="stylesheet" href="/main/map/icons/setting/settingIcon.css">
+        <link href="/main/map/css/header_footer.css" rel="stylesheet">
+        <link href="/main/map/css/main.css" rel="stylesheet">
+        <link href="/main/map/css/base.css" rel="stylesheet">
+        <link href="/main/map/css/buttons.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="headerHome">
+                <div id="homeIcon">
+                    <a href="/main/index.html">
+                        <svg viewBox="0 0 168 200" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M68.8953 19.3108C76.916 9.38515 92.0552 9.40835 100.045 19.3585L159.594 93.5137C162.446 97.0645 164 101.482 164 106.036V175.75C164 186.796 155.046 195.75 144 195.75H24.5C13.4543 195.75 4.5 186.796 4.5 175.75V106.071C4.5 101.496 6.06859 97.0589 8.94413 93.5004L68.8953 19.3108Z"/>
+                            <path id="line1" d="M30 174H138"/>
+                            <path id="line2" d="M40 164H128"/>
+                            <path id="line3" d="M50 154H118"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <button id="toggleIntroduction">Introduction</button>
+                <button id="toggleTransliteration">Transliteration</button>
+            </div>
+            <div class="headerSetting">
+                <div id="settings-icon">
+                    <div class="line" id="line1"></div>
+                    <div class="line" id="line2"></div>
+                    <div class="line" id="line3"></div>
+                    <div class="dot" id="dot1"></div>
+                    <div class="dot" id="dot2"></div>
+                    <div class="dot" id="dot3"></div>
+                </div>
+            </header>
+            <main id="mainContent">
+                <article class="cell intro-cell collapsed" id="introContainer">
+                    <template id="introductionTemplate">
+                        <section class="introduction">
+                            <h2>Introduction</h2>
+                            <p>
+                                Enheduana's poem, The Exaltation of Inana (or Nin Me Šara in Sumerian), unfolds with a stark portrayal of Inana, detailing her destructive capacities and unyielding wrath against her opponents. Midway, the narrative pivots as Enheduana, the previously anonymous narrator, introduces herself, revealing her dilemma. Previously a faithful high priestess to the moon god Nanna, she's been ousted by the insurgent leader, Lugal-Ane. The temple sacred to Inana and An has also been desecrated in the process.
+In the ensuing celestial metaphorical legal battle, with the deities as adjudicators and Enheduana and Lugal-Ane as human contenders, Enheduana is stuck in limbo—exiled but alive, her case is apparently pending. Her own predicament, tangled in divine bureaucracy, compels her to beseech Inana, having found no aid in her prayers to Nanna. Enheduana must navigate a threefold conundrum: to sway Inana to judge in her favor, encourage her to assume a judicial role at all, and to kindle acknowledgment of Inana’s authority among gods and mortals.
+A crucial aspect of the poem is its self-reflective nature. Enheduana, experiencing a poetic impasse at a crucial juncture, laments: “My honey-mouth is full of froth, my soothing words are turned to dust” (ll. 72–73). The Exaltation pivots to explore its own poetic genesis and efficacy. It scrutinizes whether Enheduana will elevate Inana, retrieve her lost eloquence, and consequently rescue herself. The poem culminates with a nocturnal ritual where Enheduana invites Inana and composes the text being read, suggesting she successfully recaptures her poetic prowess. In the concluding epilogue, Inana accepts her prayer, and her power is endorsed by the gods and Nanna, indicating that the hymn served its purpose. The final epilogue subtly shifts to the third person, symbolizing Enheduana’s transformation from a participant ("I") to an observer or creator ("her").
+                            </p>
+                        </section>
+                    </template>
+                </article>
+                <div class="cell translation-cell" id="translationContainer">
+                    <!-- <section class="translation-section" id="translationContent"> -->
+                    <h2>The exaltation of Inana</h2>
+                    <p class="hymn-txt">
+                        <span class="number">1–12</span>
+                        Lady of all the divine powers, resplendent light, righteous woman clothed in radiance, beloved of
+                        <snap class="bordertip" data-tooltip="An (Sumerian: 𒀭) or Anu (Akkadian: Anu) is the sky god in the mythology of ancient Mesopotamian civilizations: Sumerians, Akkadians, Assyrians, and Babylonians.">An</snap>
+                        and Urac! Mistress of heaven, with the great pectoral jewels, who loves the good headdress befitting the office of en priestess, who has seized all seven of its divine powers! My lady, you are the guardian of the great divine powers! You have taken up the divine powers, you have hung the divine powers from your hand. You have gathered up the divine powers, you have clasped the divine powers to your breast. Like a dragon you have deposited venom on the foreign lands. When like Ickur you roar at the earth, no vegetation can stand up to you. As a flood descending upon (?) those foreign lands, powerful one of heaven and earth, you are their Inana.
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">13–19</span>
+                        Raining blazing fire down upon the Land, endowed with divine powers by An, lady who rides upon a beast, whose words are spoken at the holy command of An! The great rites are yours: who can fathom them? Destroyer of the foreign lands, you confer strength on the storm. Beloved of Enlil, you have made awesome terror weigh upon the Land. You stand at the service of An's commands.
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">20–33</span>
+                        At your battle-cry, my lady, the foreign lands bow low. When humanity comes before you in awed silence at the terrifying radiance and tempest, you grasp the most terrible of all the divine powers. Because of you, the threshold of tears is opened, and people walk along the path of the house of great lamentations. In the van of battle, all is struck down before you. With your strength, my lady, teeth can crush flint. You charge forward like a charging storm. You roar with the roaring storm, you continually thunder with Ickur. You spread exhaustion with the stormwinds, while your own feet remain tireless. With the lamenting balaj drum a lament is struck up
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">34–41</span>
+                        My lady, the great Anuna gods fly from you to the ruin mounds like scudding bats. They dare not stand before your terrible gaze. They dare not confront your terrible countenance. Who can cool your raging heart? Your malevolent anger is too great to cool. Lady, can your mood be soothed? Lady, can your heart be gladdened? Eldest daughter of Suen, your rage cannot be cooled!
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">42–59</span>
+                        Lady supreme over the foreign lands, who can take anything from your province? Once you have extended your province over the hills (2 mss. have instead: If you frown at the mountains), vegetation there is ruined. Their great gateways (1 ms. has instead: palaces) are set afire. Blood is poured into their rivers because of you, and their people must drink it (2 mss. have instead: could not drink). They must lead their troops captive before you, all together. They must scatter their élite regiments for you, all together. They must stand their able-bodied young men at your service, all together. Tempests have filled the dancing-places of their cities. They drive their young men before you as prisoners. Your holy command has been spoken over the city which has not declared "The foreign lands are yours!", wherever they have not declared "It is your own father's!"; and it is brought back under your feet. Responsible care is removed from its sheepfolds. Its woman no longer speaks affectionately with her husband; at dead of night she no longer takes counsel with him, and she no longer reveals to him the pure thoughts of her heart. Impetuous wild cow, great daughter of Suen, lady greater than An, who can take anything from your province?
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">60–65</span>
+                        Great queen of queens, issue of a holy womb for righteous divine powers, greater than your own mother, wise and sage, lady of all the foreign lands, life-force of the teeming people: I will recite your holy song! True goddess fit for divine powers, your splendid utterances are magnificent. Deep-hearted, good woman with a radiant heart, I will enumerate your divine powers (2 mss. have instead: good divine powers) (1 ms. has instead: holy divine powers) for you!
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">66–73</span>
+                        I, En-hedu-ana the en priestess, entered my holy jipar in your service. I carried the ritual basket, and intoned the song of joy. But funeral offerings were (1 ms. has instead my ritual meal was) brought, as if I had never lived there. I approached the light, but the light was scorching hot to me. I approached that shade, but I was covered with a storm. My honeyed mouth became venomous. My ability to soothe moods vanished.
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">74–80</span>
+                        Suen, tell An about Lugal-ane and my fate! May An undo it for me! As soon as you tell An about it, An will release me. The woman will take the destiny away from Lugal-ane; foreign lands and flood lie at her feet. The woman too is exalted, and can make cities tremble. Step forward, so that she will cool her heart for me.
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">81–90</span>
+                        I, En-hedu-ana, will recite a prayer to you. To you, holy Inana, I shall give free vent to my tears like sweet beer! I shall say to her "Your decision!" (some mss. have instead: "Greetings!") Do not be anxious about Acimbabbar. In connection with the purification rites of holy An, Lugal-ane has altered everything of his, and has stripped An of the E-ana. He has not stood in awe of the greatest deity. He has turned that temple, whose attractions were inexhaustible, whose beauty was endless, into a destroyed temple. While he entered before me as if he was a partner, really he approached out of envy.
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">91–108</span>
+                        My good divine wild cow, drive out the man, capture the man! In the place of divine encouragement, what is my standing now? May An extradite the land which is a malevolent rebel against your Nanna! May An smash that city! May Enlil curse it! May its plaintive child not be placated by his mother! Lady, with the laments begun, may your ship of lamentation be abandoned in hostile territory. Must I die because of my holy songs? My Nanna has paid no heed to me (1 ms. has instead: has not decided my case). He has destroyed me utterly in renegade territory. Acimbabbar has certainly not pronounced a verdict on me. What is it to me if he has pronounced it? What is it to me if he has not pronounced it? He stood there in triumph and drove me out of the temple. He made me fly like a swallow from the window; I have exhausted my life-strength. He made me walk through the thorn bushes of the mountains. He stripped me of the rightful crown (1 ms. has instead: garment) of the en priestess. He gave me a knife and dagger, saying to me "These are appropriate ornaments for you".
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">109–121</span>
+                        Most precious lady, beloved by An, your holy heart is great; may it be assuaged on my behalf! Beloved spouse of Ucumgal-ana, you are the great lady of the horizon and zenith of the heavens. The Anuna have submitted to you. From birth you were the junior queen: how supreme you are now over the Anuna, the great gods! The Anuna kiss the ground with their lips before you. But my own trial is not yet concluded, although a hostile verdict encloses me as if it were my own verdict. I did not reach out my hands to the (1 ms. has instead: my) flowered bed. I did not reveal the pronouncements of Ningal to anybody. My lady beloved of An, may your heart be calmed towards me, the brilliant en priestess of Nanna!
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">122–138</span>
+                        It must be known! It must be known! Nanna has not yet spoken out! He has said, "He is yours!" Be it known that you are lofty as the heavens! Be it known that you are broad as the earth! Be it known that you destroy the rebel lands! Be it known that you roar at the foreign lands! Be it known that you crush heads! Be it known that you devour corpses like a dog! Be it known that your gaze is terrible! Be it known that you lift your terrible gaze! Be it known that you have flashing eyes! Be it known that you are unshakeable and unyielding! Be it known that you always stand triumphant! That Nanna has not yet spoken out, and that he has said "He is yours!" has made you greater, my lady; you have become the greatest! My lady beloved by An, I shall tell of all your rages (1 ms. has instead: daises)! I have heaped up the coals in the censer, and prepared the purification rites. The Ecdam-kug shrine awaits you. Might your heart not be appeased towards me?
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">139–143</span>
+                        Since it was full, too full for me, great exalted lady, I have recited this song for you. May a singer repeat to you at noon that which was recited to you at dead of night: "Because of your captive spouse, because of your captive child, your rage is increased, your heart unassuaged."
+                    </p>
+                    <p class="hymn-txt">
+                        <span class="number">144–154</span>
+                        The powerful lady, respected in the gathering of rulers, has accepted her offerings from her. Inana's holy heart has been assuaged. The light was sweet for her, delight extended over her, she was full of fairest beauty. Like the light of the rising moon, she exuded delight. Nanna came out to gaze at her properly, and her mother Ningal blessed her. The door posts greeted her. Everyone's speech to the mistress is exalted. Praise be to the destroyer of foreign lands, endowed with divine powers by An, to my lady enveloped in beauty, to Inana!
+                    </p>
+                    <!-- </section> -->
+                </div>
+                <div class="cell translit-cell collapsed" id="transliterationContainer">
+                    <section class="transliteration-section" id="transliterationContent">
+                        <h2>Transliteration</h2>
+                    </section>
+                </div>
+            </main>
+            <!-- <footer>
+                <div class="footer-section"></div>
+                <div class="footer-section"></div>
+                <div class="footer-section"></div>
+            </footer> -->
+            <script src="t_Transliteration.js" defer></script>
+            <script src="t_Introduction.js" defer></script>
+            <script src="tooltips.js" defer></script>
+        </body>
+    </html>

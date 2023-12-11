@@ -1,0 +1,38 @@
+#citiesContainer .city-ellipse {
+  z-index: 10;
+  display: none;
+}
+
+#mapContainer.before #citiesContainer .city-ellipse:not(.akkad) {
+  display: block;
+}
+
+#mapContainer.akkad #citiesContainer .city-ellipse {
+  display: block;
+}
+
+@keyframes growEllipse {
+  from {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes shrinkEllipse {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(0.75);
+  }
+}
+
+.city-ellipse.growing {
+  animation: growEllipse 0.5s forwards;
+}
+
+.city-ellipse.shrinking {
+  animation: shrinkEllipse 0.5s forwards;
+}

@@ -1,0 +1,22 @@
+body {
+  background-color: #000;
+}
+
+canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timeline-container {
+  width: 90%;
+  height: 95vh;
+  position: absolute;
+  overflow: visible;
+}
+
+@media only screen and (max-width: 760px) {
+  #timeline-container {
+    height: 100vh;
+  }
+}

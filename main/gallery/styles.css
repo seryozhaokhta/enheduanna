@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+canvas {
+  display: block;
+}
+
+.image-description {
+  position: absolute;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 10px;
+  display: none;
+  z-index: 100;
+  pointer-events: none; /* чтобы не мешало взаимодействию с canvas */
+  transition: opacity 0.2s; /* Плавное изменение прозрачности */
+}
+
+@media (max-width: 768px) {
+  .image-description {
+    font-size: 12px;
+    padding: 5px;
+  }
+}

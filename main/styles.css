@@ -1,0 +1,280 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  background-color: transparent;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+ cursor: crosshair;
+}
+
+header {
+  display: grid;
+  text-align: justify;
+  padding: 0;
+}
+
+.header-section {
+  width: 100%;
+}
+
+.h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14vw;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+main {
+  /* border: 0.03125em solid #ddd; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 1em;
+  padding: 1em;
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 2em;
+}
+
+.cell {
+  /* border: 0.03125em solid #ddd; */
+  background-color: transparent;
+  padding: 1em;
+}
+
+.hymns-cell {
+  /* border: 0.03125em solid #ddd; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hymns-title {
+  color: #f0f0f0;
+  margin: 0 0 0.5em;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+  font-size: 1.68em;
+  text-align: left;
+  cursor: crosshair;
+}
+
+.subtitles {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+
+.subtitle {
+  opacity: 0; /* Start with 0% opacity, subtitles are initially invisible */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.subtitle:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+#subtitle1 {
+  transition-delay: 0s;
+}
+
+#subtitle2 {
+  transition-delay: 0.1s;
+}
+#subtitle3 {
+  transition-delay: 0.2s;
+}
+#subtitle4 {
+  transition-delay: 0.3s;
+}
+
+.section-title {
+  color: #f0f0f0;
+  margin: 0 0 0.5em;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+  font-size: 1.68em;
+  text-align: left;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 1.25em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-section {
+  /* border: 0.03125em solid #ddd; */
+  padding: 0.5em;
+}
+
+.footer-eclipse {
+  display: flex;
+  justify-content: end;
+  margin-right: 1em;
+}
+
+.footer-ennoru {
+  display: flex;
+  justify-content: start;
+  margin-left: 1em;
+}
+
+#language-buttons {
+  margin-top: 0.25em;
+  display: flex;
+  position: relative;
+}
+
+#btn-no-container {
+  position: relative;
+}
+
+#btn-en,
+#btn-no,
+#btn-ru {
+  margin-right: 0.4em;
+  border-width: 0.02em;
+  border-color: gray;
+  border-radius: 7px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.additional-text {
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateX(100%) translateY(-50%);
+  pointer-events: none;
+}
+
+.button-no.horizontal {
+  margin-left: 0.2em;
+  pointer-events: auto;
+}
+
+.button-container {
+  margin-left: 0.2em;
+  display: flex;
+  gap: 0.15em;
+}
+
+.outer-container {
+  display: inline-block;
+  position: relative;
+}
+
+.eclipse {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  align-self: flex-end;
+}
+
+.eclipse .sun {
+  position: absolute;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px #ffffff;
+  background: white;
+}
+
+.eclipse .moon {
+  position: absolute;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: black;
+}
+
+.eclipse:hover .sun {
+  box-shadow: 0 0 10px 12px #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.moon:hover {
+  position: absolute;
+  filter: blur(2px);
+  scale: 0.99;
+  background: rgb(50, 50, 50);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mobile Portrait */
+@media (max-width: 30em) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, auto);
+  }
+}
+
+/* Mobile Landscape */
+@media (min-width: 30.1em) and (max-width: 48em) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+  }
+}
+
+/* Tablet Portrait */
+@media (min-width: 48.1em) and (max-width: 64em) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 64.1em) and (max-width: 80em) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+/* Desktop */
+@media (min-width: 80.1em) {
+  main {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}

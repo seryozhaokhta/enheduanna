@@ -1,0 +1,58 @@
+#settings-icon {
+  left: 53px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 0.105em;
+  background-color: #3d3d3d;
+  position: absolute;
+}
+
+#line1 {
+  top: 40px;
+}
+#line2 {
+  top: 50px;
+}
+#line3 {
+  top: 60px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  transform: translateY(-50%);
+  transition: left 0.3s ease;
+}
+
+#dot1 {
+  top: 40px;
+  left: 17px;
+}
+#dot2 {
+  top: 50px;
+  left: 10px;
+}
+#dot3 {
+  top: 60px;
+  left: 14px;
+}
+
+#settings-icon:hover #dot1 {
+  left: 10px;
+}
+#settings-icon:hover #dot2 {
+  left: 10px;
+}
+#settings-icon:hover #dot3 {
+  left: 10px;
+}

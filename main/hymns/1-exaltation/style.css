@@ -1,0 +1,166 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: max-width 0.05s ease;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.cell {
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.introduction,
+.hymn-txt {
+  line-height: 1.6;
+  max-width: 75ch;
+  margin: 1.25em auto;
+  color: #ddd;
+}
+
+.number {
+  font-size: 0.68em;
+  color: #ffd700;
+  display: inline-block;
+  margin-right: 5em;
+}
+
+[data-tooltip] {
+  cursor: none;
+}
+
+.cursor-symbol {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background-color: white;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transform-origin: center;
+}
+
+.tooltip {
+  line-height: 1.4;
+  max-width: 75ch;
+  margin: 1em auto;
+  position: absolute;
+  background-color: #ffffff;
+  color: #4b4b4b;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.bordertip {
+  border-bottom: 1.68px dotted rgb(143, 143, 143);
+  cursor: none;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.bordertip:hover,
+.bordertip:active {
+  border-bottom-color: white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 0.25em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+}
+
+.footer-section {
+  padding: 0.25em;
+  /* border: 0.0002em solid #505050; */
+}
+
+.translit-range {
+  font-size: 0.68em;
+  color: #ffd700;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.char {
+  font-size: larger;
+  color: red;
+}
+
+.transliteration-section p {
+  line-height: 1.6;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+#mainContent {
+  display: grid;
+  grid-gap: 1em;
+  transition: all 0.5s ease;
+  padding: 1em;
+  background-color: #000000;
+  color: #ddd;
+}
+
+#introContainer {
+  grid-column: 1 / 3;
+  overflow-y: auto;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+#introContainer.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+#translationContainer,
+#transliterationContainer {
+  opacity: 1;
+  transition: all 0.5s ease;
+  max-width: 100%; /* Используем width вместо max-width */
+}
+
+#transliterationContainer.collapsed {
+  width: 0; /* Используем width вместо max-width */
+  opacity: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  #mainContent {
+    grid-template-columns: 1fr; /* Одна колонка на всю ширину */
+  }
+
+  #introContainer,
+  #translationContainer,
+  #transliterationContainer {
+    grid-column: 1; /* Все контейнеры займут первую колонку, что сделает их вертикальными */
+  }
+}

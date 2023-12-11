@@ -1,0 +1,32 @@
+main::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  padding: 1em;
+  flex-grow: 2;
+  margin-bottom: 2em;
+}
+
+.map-container {
+  position: relative;
+  width: auto;
+  height: 70.65vw;
+}
+
+h5 {
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+li {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 0.5;
+  max-width: 600px;
+  line-height: 1.5;
+}
